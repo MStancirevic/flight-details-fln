@@ -1,8 +1,8 @@
 A function that retrieves a flight schedule of a small operator connecting two points in the North Germany. The flight schedule consists of multiple daily flights between Juist and Norddeich and vice versa.
 
-The function asynchronously retrieves flight details from multiple tasks where each task is all flights found for a single direction in a single day. The output is a table that contains aggregated flight details and is exported to .xlsx
+The function asynchronously retrieves flight details from a hidden api by creating an event loop of multiple tasks where each task is all flights found for a single direction in a single day. The output is a table that contains aggregated flight details and is exported to .xlsx
 
-The asynchronous function that uses an event loop takes the following optional arguments:
+The function takes the following optional arguments:
 
  - proxy (store your proxy into the .env file and it will be found by loadenv library)
  - n (number of days that will be parsed, starting from today)
